@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+JavaScript
+Phyton
+Node
+VsCode
+CSS
