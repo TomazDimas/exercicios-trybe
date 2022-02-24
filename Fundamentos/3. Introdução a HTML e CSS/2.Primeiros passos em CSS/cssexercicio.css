@@ -1,0 +1,32 @@
+h1 {
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3em;
+    text-align: center;
+}
+
+body {
+    font-size: 16px;
+}
+
+ul {
+    line-height: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#amarelo {
+    color: rgb(153, 153, 3);
+}
+
+#vermelho {
+    color: red
+}
+
+#marrom {
+    color: rgb(114, 62, 33)
+}
