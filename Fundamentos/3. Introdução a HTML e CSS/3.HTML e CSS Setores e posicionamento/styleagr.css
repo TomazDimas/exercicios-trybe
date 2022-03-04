@@ -1,21 +1,29 @@
-h1 {
-    text-align: center;
+div:hover {
+    border-style: groove;
+    border-width: 5px;
 }
 
-p {
-    text-align: center;
+.primaria {
+    color: aqua;
 }
 
-li:hover {
-    background-color: aqua;
+.secundaria {
+    color: bisque;
 }
 
-li:active {
-    font-family: sans-serif;
-    font-size: 20px;
-    color: aliceblue;
+.complementar {
+    color: blueviolet;
+    font-size: 30px;
 }
 
-ol, ul {
-    list-style: none;
+.escura {
+    color: black;
+}
+
+.clara {
+    color: antiquewhite;
+}
+
+.impar {
+    font-style: italic;
 }
