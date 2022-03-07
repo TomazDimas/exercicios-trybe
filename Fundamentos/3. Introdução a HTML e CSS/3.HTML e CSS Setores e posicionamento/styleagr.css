@@ -1,0 +1,29 @@
+div:hover {
+    border-style: groove;
+    border-width: 5px;
+}
+
+.primaria {
+    color: aqua;
+}
+
+.secundaria {
+    color: bisque;
+}
+
+.complementar {
+    color: blueviolet;
+    font-size: 30px;
+}
+
+.escura {
+    color: black;
+}
+
+.clara {
+    color: antiquewhite;
+}
+
+.impar {
+    font-style: italic;
+}
