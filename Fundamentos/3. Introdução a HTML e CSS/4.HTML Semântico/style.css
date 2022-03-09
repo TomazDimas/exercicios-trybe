@@ -1,0 +1,45 @@
+aside, footer, nav {
+    border: 1px solid black;
+}
+
+body {
+    font-family: fantasy;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    background-color: antiquewhite;
+}
+
+body {
+    font-size: 22px;
+}
+
+img {
+    width: 600px;
+}
+
+img.imagem {
+    margin: 0 auto;
+}
+
+section {
+    text-align: center;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+table {
+    border: 1px solid black
+}
+
+table th {
+    border: 1px solid black
+}
+
