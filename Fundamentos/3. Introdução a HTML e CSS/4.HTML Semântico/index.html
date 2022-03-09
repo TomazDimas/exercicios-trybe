@@ -1,87 +1,139 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ranking</title>
-  <style>
-    h1 {
-      text-align: center;
-    }
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>HTML Semântico</title>
+  </head>
 
-    .first {
-      background-color: rgb(235, 200, 84);
-      font-size: 20px;
-      height: 50px;
-      text-align: center;
-      width: 200px;
-      /* Resposta */
-      display: block;
-      margin-left: 790px;
-    }
-
-    .second {
-      background-color: rgb(219, 219, 219);
-      font-size: 20px;
-      height: 50px;
-      text-align: center;
-      width: 300px;
-      /* Resposta */
-      display: inline-block;
-    }
-
-    .third {
-      background-color: rgb(170, 142, 106);
-      font-size: 20px;
-      height: 50px;
-      text-align: center;
-      width: 300px;
-      /* Resposta */
-      display: inline-block;
-    }
-
-    li {
-      display: inline-block;
-    }
-
-    /* Resposta */
-    h3 {
-      text-align: center;
-    }
-
-    ul {
-        text-align: center;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <h1>Hackathon Results</h1>
-  </header>
-  <section>
-    <ul>
-      <li class="first">1º - Equipe 1</li>
-      <li class="second">2º - Equipe 2</li>
-      <li class="third">3º - Equipe 3</li>
-    </ul>
-  </section>
-  <section>
-    <h3>Premiação Primeiro Lugar:</h3>
-    <ul>
-      <li>| R$ 1000,00 por integrante da equipe |</li>
-      <li>| Bootcamp de 2 meses com possibilidade de contratação |</li>
-    </ul>
-    <h3>Premiação Segundo Lugar:</h3>
-    <ul>
-      <li>| R$ 600,00 por integrante da equipe |</li>
-      <li>| Participação no processo seletivo para o Bootcamp |</li>
-    </ul>
-    <h3>Premiação Terceiro Lugar:</h3>
-    <ul>
-      <li>| R$ 300,00 por integrante da equipe |</li>
-      <li>| Participação no processo seletivo para o Bootcamp |</li>
-    </ul>
-  </section>
-</body>
+  <body>
+    <header class="header">
+      <h1>Soco a 80km/h: Conheça o Stomadopoda</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a>Página Inicial</a></li>
+        <li><a>Sobre</a></li>
+        <li><a>Contato</a></li>
+      </ul>
+    </nav>
+    <article>
+      <h2>Fatos sobre o Stomatopoda</h2>
+      <p></p>
+      <section>
+        <h3>Informações Gerais</h3>
+        <p>
+          O <em>Odontodactylus scyllarus</em>, popularmente conhecido como
+          Stomatopoda é um animal extremamente diferente e interessante. Ao
+          longo desse texto, vamos te mostrar a razão desse animal ser o nosso
+          <strong>ser vivo favorito!</strong>
+        </p>
+        <img
+          src="https://media.wired.com/photos/60300b7b091d7b01b7e2080b/191:100/w_1280,c_limit/Science_mantisshrimp-1061398692.jpg"
+          class="imagem"
+          alt="Mantis Shrimp"
+        />
+        <table>
+          <tr>
+            <th>Reino</th>
+            <th>Filo</th>
+            <th>Subfilo</th>
+            <th>Classe</th>
+            <th>Subclasse</th>
+            <th>Ordem</th>
+          </tr>
+          <tr>
+            <td>Animalia</td>
+            <td>Arthropoda</td>
+            <td>Crustacea</td>
+            <td>Malacostraca</td>
+            <td>Hoplocarida</td>
+            <td>Stomatopoda</td>
+          </tr>
+        </table>
+      </section>
+      <section>
+        <h3>Mais de 16 cores em sua visão!</h3>
+        <p>
+          Nós, seres vivos, possuimos receptores de cor em nossos olhos, que nos
+          ajudam a identificar e diferenciar as cores que enxergamos no mundo.
+        </p>
+        <p>
+          Para trazer algumas comparações, levantaremos alguns seres vivos e o
+          número de receptores que eles possuem:
+        </p>
+        <p>
+          Os cachorros possuem apenas 2 receptores, nós humanos possuimos 3, já
+          as borboletas possuem incríveis 5 receptores de cor!
+        </p>
+        <img
+          src="https://i.natgeofe.com/n/7f084ce5-e41f-44a3-a1f2-e9433f7651ae/Mantis-Shrimp-eye.jpg?w=636&h=570"
+          class="imagem"
+          alt="Olhos do Camarão"
+        />
+        <p>
+          Agora quando falamos do nosso querido camarão, nem existe competição,
+          ele possui nada mais, nada menos que
+          <strong>16 recepetores de cor</strong>, dá pra acreditar?
+        </p>
+      </section>
+      <section>
+        <h3>O soco mais rápido que existe</h3>
+        <p>
+          Agora a informação mais interessante sobre esse animal e aquela pela
+          qual ele é mais conhecido é a velocidade do seu soco!
+        </p>
+        <img
+          src="https://images.newscientist.com/wp-content/uploads/2018/10/17171757/182947_web.jpg"
+          class="imagem"
+          alt="Soco"
+        />
+        <p>
+          Em um comunicado, pesquisadores envolvidos em um novo estudo acerca
+          deste animal, revelaram resultados impressionantes. Segundo o novo
+          estudo, a velocidade de cada soco do animal, estaria estimada em,
+          aproximadamente, <strong>23 metros por segundo</strong>, que poderia
+          gerar a cada golpe, 1.500 newtons de força. Com toda essa força, esses
+          pequenos animais conseguem quebrar as carapaças de caranguejos e
+          outros moluscos.
+        </p>
+      </section>
+      <section>
+        <h3>Referências</h3>
+        <ul>
+          <li>
+            <a href="https://pt.wikipedia.org/wiki/Stomatopoda" target="_blank"
+              >Wikipedia</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://theoatmeal.com/comics/mantis_shrimp"
+              target="_blank"
+              >The Oat Meal</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.nationalgeographic.com/science/article/natures-most-amazing-eyes-just-got-a-bit-weirder"
+              target="_blank"
+              >National Geographic</a
+            >
+          </li>
+        </ul>
+      </section>
+    </article>
+    <aside>
+      <h2>Camarão em ação!</h2>
+      <a
+        href="https://www.youtube.com/watch?v=E0Li1k5hGBE&ab_channel=NatGeoWILD"
+        target="_blank"
+        >Veja o vídeo</a
+      >
+    </aside>
+    <footer>
+      <h3>Conteúdo compilado por Tomaz Dimas, 2022.</h3>
+    </footer>
+  </body>
 </html>
