@@ -71,3 +71,9 @@ let moradores = {
 
 // console.log('O morador do bloco 2 de nome ' + moradores.blocoDois[1].nome + " " + moradores.blocoDois[1].sobrenome + " mora no " + moradores.blocoDois[1].andar + "° andar, apartamento " + moradores.blocoDois[1].apartamento);
 
+// for (i = 0; i < 2; i += 1) {
+// 	console.log(moradores.blocoUm[i].nome + " " + moradores.blocoUm[i].sobrenome);
+// }
+// for (i = 0; i < 2; i += 1) {
+// 	console.log(moradores.blocoDois[i].nome + " " + moradores.blocoDois[i].sobrenome);
+// }
