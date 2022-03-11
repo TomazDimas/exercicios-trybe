@@ -31,4 +31,16 @@
 // let objeto = {};
 // objeto[6] = 6;
 
-// console.log(objeto);
+// // console.log(objeto);
+
+// let test = 'TOMAZ';
+// test = test.toLowerCase()
+
+// console.log(test);
+
+// let vector = [[1, 2], [3,4,5,6], [7,8,9,10]];
+// let teste = vector[1]
+// let pos = teste[1];
+
+// console.log(teste);
+// console.log(pos);
