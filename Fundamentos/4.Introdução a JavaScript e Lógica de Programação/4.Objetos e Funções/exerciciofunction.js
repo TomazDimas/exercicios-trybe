@@ -38,39 +38,50 @@ function menorValor(numeros2) {
 
 function maisCaracteres(nomes) {
   let maisCar = nomes[0];
-	for (let index in nomes) {
-		if (nomes[index].length > maisCar.length) {
-			maisCar = nomes[index];
-		}
-	}
-	return maisCar;
+  for (let index in nomes) {
+    if (nomes[index].length > maisCar.length) {
+      maisCar = nomes[index];
+    }
+  }
+  return maisCar;
 }
 
 // console.log(maisCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
 
 function maisRepetido(numeros3) {
-	let tabela = {};
+  let tabela = {};
 
-	for (let i1 in numeros3) {
-		let valor = numeros3[i1];
-		if (tabela[valor] === undefined) {
-			tabela[valor] = 1;
-		} else {
-			tabela[valor] = tabela[valor] + 1 
-		}
-	}
+  for (let i1 in numeros3) {
+    let valor = numeros3[i1];
+    if (tabela[valor] === undefined) {
+      tabela[valor] = 1;
+    } else {
+      tabela[valor] = tabela[valor] + 1;
+    }
+  }
 
-	let maisRepeticoes = 0;
-	let maisRepetido = tabela[0];
+  let maisRepeticoes = 0;
+  let maisRepetido = tabela[0];
 
-	for (let i2 in tabela) {
-		if (tabela[i2] > maisRepeticoes) {
-			maisRepeticoes = tabela[i2]
-			maisRepetido = i2;
-		}
-	}
-	
-	return maisRepetido;
+  for (let i2 in tabela) {
+    if (tabela[i2] > maisRepeticoes) {
+      maisRepeticoes = tabela[i2];
+      maisRepetido = i2;
+    }
+  }
+
+  return maisRepetido;
 }
 
-console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
+// console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
+
+function somaAte(numero) {
+  let soma = 0;
+
+  for (let i = 1; i <= numero; i += 1) {
+    soma += i;
+  }
+  return soma;
+}
+
+console.log(somaAte(5));
