@@ -31,4 +31,9 @@
 // let objeto = {};
 // objeto[6] = 6;
 
-// console.log(objeto);
+// // console.log(objeto);
+
+// let test = 'TOMAZ';
+// test = test.toLowerCase()
+
+// console.log(test);
