@@ -84,4 +84,27 @@ function somaAte(numero) {
   return soma;
 }
 
-console.log(somaAte(5));
+// console.log(somaAte(5));
+
+function conferirFinal(palavra, fimPalavra) {
+	let vetorPalavra = palavra.split("");
+	let vetorFimPalavra = fimPalavra.split("");
+	let resultado = false;
+	let somatorio = 0;
+
+	for (i = 1; i <= fimPalavra.length; i += 1) {
+		let posicaoPalavra = vetorPalavra.length - i;
+		let posicaoFimPalavra = vetorFimPalavra.length - i;
+		if (vetorPalavra[posicaoPalavra] == vetorFimPalavra[posicaoFimPalavra]) {
+			somatorio += 1
+		}
+	}
+
+	if (somatorio == fimPalavra.length) {
+		resultado = true;
+	}
+	return resultado;
+}
+
+console.log(conferirFinal('trybe', 'be'));
+console.log(conferirFinal('joaofernando', 'fernan'));
