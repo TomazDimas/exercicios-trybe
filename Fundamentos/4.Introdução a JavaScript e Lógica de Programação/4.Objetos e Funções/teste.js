@@ -8,17 +8,17 @@
 
 // console.log(frutas);
 
-let nome = 'tomaz';
-let troca = nome.split("")
-troca.reverse();
-console.log(troca);
-nome = troca.join('a')
+// let nome = 'tomaz';
+// let troca = nome.split("")
+// troca.reverse();
+// console.log(troca);
+// nome = troca.join('a')
 
 
 
-console.log(nome);
-console.log(troca);
-console.log(troca.length);
+// console.log(nome);
+// console.log(troca);
+// console.log(troca.length);
 
 // let cidade = 'brasília'
 
@@ -27,3 +27,8 @@ console.log(troca.length);
 // cidade = subs.join("")
 
 // console.log(cidade);
+
+// let objeto = {};
+// objeto[6] = 6;
+
+// console.log(objeto);
