@@ -62,3 +62,24 @@ function createButton(nomeBotao) {
 }
 
 createButton("Feriados");
+
+// EXERCICIO 3
+
+
+function colorButton() {
+  let vetorFeriados = document.querySelectorAll('.holiday');
+  let botaoFeriados = document.getElementById('btn-holiday');
+
+  botaoFeriados.addEventListener('click', function() {
+  for (let i = 0; i < vetorFeriados.length; i += 1) {
+    let diaFeriado = vetorFeriados[i];
+    if (diaFeriado.style.background === 'blue') {
+      diaFeriado.style.background = 'rgb(238,238,238)'
+    } else {
+      diaFeriado.style.background = 'blue'
+    }
+  }
+  });
+}
+
+colorButton();
