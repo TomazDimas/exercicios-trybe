@@ -1,0 +1,22 @@
+body {
+    margin: 10px;
+}
+
+.preferences {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid green;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+article {
+    display: flex;
+}
