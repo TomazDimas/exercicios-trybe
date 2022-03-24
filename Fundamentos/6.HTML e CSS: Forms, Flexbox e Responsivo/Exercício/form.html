@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Formulário TrybeTrip</h1>
+	</header>
+	<form id="form" action="" method="get">
+		<div class="allForm">
+			<div class="formContent">
+				<label for="nameInput">Nome:</label>
+				<input type="text" name="name" id="nameInput" maxlength="40" minlength="10">
+			</div>
+			<div class="formContent">
+				<label for="emailInput">Email:</label>
+				<input type="email" name="email" id="emailInput" maxlength="50" minlength="10">
+			</div>
+			<div class="formContent">
+				<span id="textPlace">Que tipo de ambiente você mais gosta?</span><br>
+				<input value="city" type="radio" name="option" id="op1">
+				<label for="op1">Cidade</label>
+				<input value="field" type="radio" name="option" id="op2">
+				<label for="op2">Campo</label>
+				<input value="beach" type="radio" name="option" id="op3">
+				<label for="op3">Praia</label>
+				<input value="mountain" type="radio" name="option" id="op4">
+				<label for="op4">Montanhas</label>
+			</div>
+			<div class="formContent">
+				<label for="answerInput">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label><br>
+				<textarea name="answer" id="answerInput" cols="30" rows="10"></textarea>
+			</div>
+			<div class="formContent">
+				<p>Qual a melhor data para realizar sua viagem?</p>
+				<label for="dateInput">Data:</label>
+				<input type="date" name="date" id="dateInput">
+			</div>
+			<div class="formContent">
+				<label for="agreeInput1">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+				<input type="checkbox" name="agree" id="agreeInput1"><br>
+				<label for="agreeInput2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+				<input type="checkbox" name="agree" id="agreeInput2">
+			</div>
+		</div>
+		<div class="buttonSection">
+			<button type="submit" class="button" id="sendButton">Enviar</button>
+			<button class="button" id="eraseButton">Apagar</button>
+		</div>
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>

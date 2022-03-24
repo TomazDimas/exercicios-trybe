@@ -1,0 +1,62 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: monospace;
+	background-color: rgb(235, 235, 235);
+}
+
+header {
+	border: 1px solid grey;
+	padding: 20px;
+	background-color: white;
+	margin: 10px auto;
+	border-radius: 5px;
+	max-width: 95%;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	color: rgb(3, 3, 61);
+}
+
+#form, .buttonSection {
+	border: 1px solid grey;
+	background-color: white;
+	padding: 20px;
+	max-width: 95%;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+
+.formContent {
+	padding: 5px;
+	margin: auto;
+}
+
+.formContent input[type='text'], .formContent input[type='email'], textarea {
+	width: 100%;
+}
+
+#textPlace {
+	display: block;
+}
+
+.buttonSection {
+	text-align: center;
+	border: none;
+}
+
+.button {
+	padding: 10px 20px;
+	font-size: 18px;
+	background-color: rgb(3, 3, 61);
+	border: none;
+	color: white;
+	border-radius: 8px;
+}
