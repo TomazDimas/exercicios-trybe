@@ -3,7 +3,7 @@
  * apply a natural box layout model to all elements, but allowing components to change
  */
 
- /* 1 BREAKPOINT: 480PX */
+ /* 1 BREAKPOINT: 600PX */
  /* 2 BREAKPOINT: 1000PX */
 
 html {
@@ -49,7 +49,7 @@ figcaption {
   font-size: 0.8em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 600px) {
     body {
         background-color: antiquewhite;
         font-size: 24px;
@@ -73,4 +73,18 @@ figcaption {
         flex-grow: 1;
         text-align: center;
     }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: azure;
+        font-size: 30px;
+        margin: 40px auto;
+        max-width: 900px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
 }
