@@ -88,3 +88,25 @@ body {
         width: 100%;
     }
 }
+
+@media (max-width: 700px) {
+    #aside {
+        display: none;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    img {
+        max-width: 90%;
+    }
+
+    #navigation ul {
+        flex-direction: column;
+    }
+
+    #header {
+        position: fixed;
+    }
+}
