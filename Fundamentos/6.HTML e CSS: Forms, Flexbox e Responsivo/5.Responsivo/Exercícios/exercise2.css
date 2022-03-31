@@ -1,0 +1,189 @@
+/* BREAKPOINTS: */
+/* P = <450px; */
+/* M = <1000px; */
+/* g = >1000px; */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: darkblue;
+    color: azure;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: none;
+}
+
+header i {
+    margin-left: 20px;
+}
+
+header p {
+    font-size: 25px;
+}
+
+.asideContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(208, 223, 223);
+    border-radius: 20px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+.asideContainer aside {
+    margin-bottom: 20px;
+}
+
+.asideContainer aside h2 {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    background-color: rgb(208, 223, 223);
+    width: 90%;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-content h1 {
+    font-size: 30px;
+}
+
+.main-content p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: rgb(208, 223, 223);
+    width: 90%;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+footer h3 {
+    font-size: 27px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 450px) {
+    * {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 27px;
+    }
+
+    .asideContainer aside h2 {
+        font-size:  35px;
+    }
+
+    .main-content h1 {
+        font-size: 35px;
+    }
+
+    footer h3 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        padding: 25px 30px;
+    }
+
+    header p {
+        font-size: 40px;
+    }
+
+    header nav {
+        display: flex;
+        width: 50%;
+        justify-content: center;
+    }
+
+    header nav ul {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        list-style: none;
+    }
+
+    header nav ul li {
+        font-size: 30px;
+        margin-right: 30px;
+    }
+    
+    header .fa-solid {
+        display: none;
+    }
+
+    .asideContainer {
+        flex-direction: row;
+        background-color: white;
+        flex-basis: 90%;
+        max-width: 1000px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .asideContainer aside {
+        background-color: rgb(208, 223, 223);
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .main-content {
+        max-width: 1000px;
+    }
+
+    footer {
+        max-width: 1000px;
+    }
+}
