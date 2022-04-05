@@ -34,7 +34,7 @@ const listValues = object => Object.values(object);
 // console.log(listValues(lesson2));
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
-// console.log(allLessons);
+console.log(allLessons);
 
 const numberStudent = (object) => {
     let totalStudents = 0;
@@ -51,3 +51,14 @@ const getValueByPosition = (object, index) => Object.values(object)[index];
 const verifyPair = (object, key, value) => Object.keys(object).includes(key) && object[key] === value ? true : false;
 // console.log(verifyPair(lesson3, 'turno', 'noite'));
 // console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
+
+const mathStudens = object => {
+    let totalMathStudent = 0;
+    for (let lesson in object) {
+        if (object[lesson].materia === 'Matemática') {
+            totalMathStudent += object[lesson].numeroEstudantes;
+        }
+    }
+    return totalMathStudent;
+}
+console.log(mathStudens(allLessons));
