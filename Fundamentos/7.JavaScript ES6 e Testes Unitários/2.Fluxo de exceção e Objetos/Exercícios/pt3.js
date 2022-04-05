@@ -22,19 +22,19 @@ const addTurn = (object, key, value) => {
     object[key] = value;
 }
 addTurn(lesson2, 'turno', 'noite');
-console.log(lesson2);
+// console.log(lesson2);
 
 const listKeys = object => Object.keys(object);
-console.log(listKeys(lesson2));
+// console.log(listKeys(lesson2));
 
 const objectSize = object => Object.keys(object).length;
-console.log(objectSize(lesson2));
+// console.log(objectSize(lesson2));
 
 const listValues = object => Object.values(object);
-console.log(listValues(lesson2));
+// console.log(listValues(lesson2));
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
-console.log(allLessons);
+// console.log(allLessons);
 
 const numberStudent = (object) => {
     let totalStudents = 0;
@@ -43,5 +43,11 @@ const numberStudent = (object) => {
     }
     return totalStudents;
 }
+// console.log(numberStudent(allLessons));
 
-console.log(numberStudent(allLessons));
+const getValueByPosition = (object, index) => Object.values(object)[index];
+// console.log(getValueByPosition(lesson1, 0));
+
+const verifyPair = (object, key, value) => Object.keys(object).includes(key) && object[key] === value ? true : false;
+// console.log(verifyPair(lesson3, 'turno', 'noite'));
+// console.log(verifyPair(lesson3, 'materia', 'Maria Clara'));
