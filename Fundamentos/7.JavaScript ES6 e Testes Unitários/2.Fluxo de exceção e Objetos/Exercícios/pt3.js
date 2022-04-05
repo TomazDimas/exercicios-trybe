@@ -21,10 +21,11 @@ const lesson3 = {
 const addTurn = (object, key, value) => {
     object[key] = value;
 }
-
 addTurn(lesson2, 'turno', 'noite');
 console.log(lesson2);
 
 const listKeys = object => Object.keys(object);
-
 console.log(listKeys(lesson2));
+
+const objectSize = object => Object.keys(object).length;
+console.log(objectSize(lesson2));
