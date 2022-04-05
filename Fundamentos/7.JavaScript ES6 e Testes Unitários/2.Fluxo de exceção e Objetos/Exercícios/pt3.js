@@ -34,7 +34,7 @@ const listValues = object => Object.values(object);
 // console.log(listValues(lesson2));
 
 const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
-console.log(allLessons);
+// console.log(allLessons);
 
 const numberStudent = (object) => {
     let totalStudents = 0;
@@ -55,10 +55,27 @@ const verifyPair = (object, key, value) => Object.keys(object).includes(key) && 
 const mathStudens = object => {
     let totalMathStudent = 0;
     for (let lesson in object) {
-        if (object[lesson].materia === 'Matemática') {
-            totalMathStudent += object[lesson].numeroEstudantes;
-        }
+        object[lesson].materia === 'Matemática' ? totalMathStudent += object[lesson].numeroEstudantes : totalMathStudent = totalMathStudent;
     }
     return totalMathStudent;
 }
-console.log(mathStudens(allLessons));
+// console.log(mathStudens(allLessons));
+
+const createReport = (object, professor) => {
+    let totalStudents = 0;
+    let totalLessons = [];
+    for (let lesson in object) {
+        if (Object.values(object[lesson]).includes(professor)) {
+            totalStudents += object[lesson].numeroEstudantes;
+            totalLessons.push(object[lesson].materia);
+        }
+    }
+    return {
+        professor: professor,
+        aulas: totalLessons,
+        estudantes: totalStudents,
+    }
+}
+
+console.log(createReport(allLessons, 'Maria Clara'));
+console.log(createReport(allLessons, 'Carlos'));
