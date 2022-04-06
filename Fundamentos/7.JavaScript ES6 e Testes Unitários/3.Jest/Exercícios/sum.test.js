@@ -8,6 +8,7 @@ describe('Testes da função sum', () => {
   });
   test('Teste de input de string', () => {
     expect(() => sum(4, '5')).toThrow();
+    expect(() => sum(4, '5')).toThrow('parameters must be numbers');
   })
 })
 
