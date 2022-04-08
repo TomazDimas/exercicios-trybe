@@ -28,4 +28,4 @@ function findMusic(id) {
   return musicas.find((music) => music.id === id);
 }
 
-console.log(findMusic('31031685'))
+console.log(findMusic('31031685'));
