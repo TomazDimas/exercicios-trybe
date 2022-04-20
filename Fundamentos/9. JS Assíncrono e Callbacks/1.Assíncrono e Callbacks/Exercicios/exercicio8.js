@@ -19,7 +19,7 @@ const pokemons = [
 function getPokemonDetails(filter, callback) {
   setTimeout(() => {
     if (pokemons.find(filter) === undefined) {
-      return callback(new Error('Não temos esse pokémon para você :('), null);
+      return callback(new Error('Não temos esse pokémon para você :', null));
     }
     const pokemon = pokemons.find(filter);
 
@@ -31,7 +31,7 @@ function getPokemonDetails(filter, callback) {
   }, 2000);
 }
 
-getPokemonDetails((pokemon) => pokemon.name === 'Squirtle', (error, message) => {
+getPokemonDetails((pokemon) => pokemon.name === 'ds', (error, message) => {
   if (error) {
     console.log(error);
   } else {
