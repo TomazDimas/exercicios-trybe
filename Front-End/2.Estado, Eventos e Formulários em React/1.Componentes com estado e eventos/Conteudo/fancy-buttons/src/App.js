@@ -44,12 +44,16 @@ class App extends React.Component {
     console.log(this.state);
   }
 
+  getColor = (clickNum) => {
+    return clickNum % 2 === 0 ? 'green' : 'red';
+  }
+
   render() {
     return(
       <div>
-        <button onClick={this.handleClick1}>Botão1</button>
-        <button onClick={this.handleClick2}>Botão2</button>
-        <button onClick={this.handleClick3}>Botão3</button>
+        <button onClick={this.handleClick1} style={{background: this.getColor(this.state.contagemBotao1)}} >Botão1</button>
+        <button onClick={this.handleClick2} style={{background: this.getColor(this.state.contagemBotao2)}} >Botão2</button>
+        <button onClick={this.handleClick3} style={{background: this.getColor(this.state.contagemBotao3)}} >Botão3</button>
       </div>
     )
   }
