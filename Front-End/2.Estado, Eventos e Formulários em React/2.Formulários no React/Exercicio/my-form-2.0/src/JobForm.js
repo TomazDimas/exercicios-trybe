@@ -9,8 +9,14 @@ class JobForm extends React.Component {
         <fieldset>
           <h1>Último Emprego</h1>
           <div className='formContainer'>
-            <label for='nameInput'>Nome:</label>
-            <input name='nome' id='nameInput' type='text' maxLength={40} required></input>
+            <label for='currResumee'>Nome:</label>
+            <textarea name='resumo' id='currResumee' maxLength={1000} required cols='100' rows='3'></textarea>
+          </div>
+          <div className='formContainer'>
+            <label for='role'>Nome:</label>
+            <textarea name='resumo' id='role' maxLength={40} required cols='100' rows='3' onMouseEnter={() => {
+              alert('Preencha com atenção')}
+              }></textarea>
           </div>
         </fieldset>
       </form>
