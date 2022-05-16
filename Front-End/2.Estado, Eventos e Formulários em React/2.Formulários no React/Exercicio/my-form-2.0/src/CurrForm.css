@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+form {
+  padding: 20px;
+}
+
+input, select, textarea {
+  width: 99%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.formContainer {
+  border: 1px solid gray;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: gainsboro;
+}
+
+#houseInput, #apartmentInput {
+  width: 2%;
+}
