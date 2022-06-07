@@ -42,4 +42,22 @@ describe('Exercício 1 Itens 1 a 3', () => {
 
 })
 
-describe('Exercício 1 Item 4')
+describe('Exercício 1 Item 4', () => {
+  it('Funcões mockadas', () => {
+    service.toUpperCase = jest.fn().mockImplementation((string) => string.toLowerCase())
+    service.firstLetter = jest.spyOn(service, 'firstLetter').mockImplementation(string => string.charAt(string.length - 1))
+    service.concatString = jest.spyOn(service, 'concatString').mockImplementation((str1, str2, str3) => `${str1}${str2}${str3}`)
+
+    expect(service.toUpperCase('TomAZ')).toBe('tomaz')
+    expect(service.toUpperCase).toHaveBeenCalled()
+    expect(service.toUpperCase).toHaveBeenCalledTimes(1)
+
+    expect(service.firstLetter('tomaz')).toBe('z')
+    expect(service.firstLetter).toHaveBeenCalled()
+    expect(service.firstLetter).toHaveBeenCalledTimes(1)
+
+    expect(service.concatString('tomaz', 'dimas', 'souza')).toBe('tomazdimassouza')
+    expect(service.concatString).toHaveBeenCalled()
+    expect(service.concatString).toHaveBeenCalledTimes(1)
+  })
+})
