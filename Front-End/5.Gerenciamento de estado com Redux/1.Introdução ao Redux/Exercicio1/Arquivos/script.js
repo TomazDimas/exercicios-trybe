@@ -35,4 +35,9 @@ botaoNext.addEventListener('click', () => {
   store.dispatch({type: 'PREVIOUS_COLOR'})
 });
 
+store.subscribe(() => {
+  document.getElementById('value').innerHTML = store.getState().colors[store.getState().index];
+  document.getElementById('container').style.background = store.getState().colors[store.getState().index]
+})
+
 console.log(store.getState());
