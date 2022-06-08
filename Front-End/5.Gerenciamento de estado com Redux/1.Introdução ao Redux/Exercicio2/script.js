@@ -30,7 +30,7 @@ const meuPrimeiroReducer = (state = ESTADO_INICIAL_1, action) => {
       return {
         ...state,
         nome: action.nome,
-        sobrenome: action.sobrenome
+        sobrenome: action.sobrenome,
       }
     default:
       return state;
@@ -43,7 +43,7 @@ const meuSegundoReducer = (state = ESTADO_INICIAL_2, action) => {
       return {
         ...state,
         nome: action.nome,
-        sobrenome: action.sobrenome
+        sobrenome: action.sobrenome,
       }
     default:
       return state;
@@ -57,4 +57,13 @@ const reducesCombinados = Redux.combineReducers({
 
 const store = Redux.createStore(reducesCombinados);
 
-console.log(store);
+console.log(store.getState());
+
+window.onload = () => {
+  setTimeout(() => {
+    //Seu dispatch vem aqui //
+    store.dispatch(changeNames1('tomaz', 'dimas'))
+    store.dispatch(changeNames2('paulo', 'silva'))
+    console.log(store.getState());
+  }, 3000);
+};
