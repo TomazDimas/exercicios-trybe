@@ -57,13 +57,19 @@ const reducesCombinados = Redux.combineReducers({
 
 const store = Redux.createStore(reducesCombinados);
 
-console.log(store.getState());
+store.subscribe(() => {
+  const { meuPrimeiroReducer, meuSegundoReducer } = store.getState();
+
+  document.getElementById('nome-1').innerHTML = meuPrimeiroReducer.nome
+  document.getElementById('sobrenome-1').innerHTML = meuPrimeiroReducer.sobrenome
+  document.getElementById('nome-2').innerHTML = meuSegundoReducer.nome
+  document.getElementById('sobrenome-2').innerHTML = meuSegundoReducer.sobrenome
+})
 
 window.onload = () => {
   setTimeout(() => {
     //Seu dispatch vem aqui //
-    store.dispatch(changeNames1('tomaz', 'dimas'))
-    store.dispatch(changeNames2('paulo', 'silva'))
-    console.log(store.getState());
-  }, 3000);
+    store.dispatch(changeNames1('Tomaz', 'Dimas'))
+    store.dispatch(changeNames2('Paulo', 'Silva'))
+  }, 1000);
 };
