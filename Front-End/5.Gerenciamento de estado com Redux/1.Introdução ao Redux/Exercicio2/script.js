@@ -3,4 +3,6 @@ const reducesCombinados = Redux.combineReducers({
   meuSegundoReducer
 });
 
-console.log(reducesCombinados);
+const store = Redux.createStore(reducesCombinados);
+
+console.log(store);
