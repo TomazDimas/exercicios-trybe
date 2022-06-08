@@ -17,4 +17,21 @@ const concatString = (str1, str2) => {
   return `${str1}${str2}`
 }
 
+// const fetchDog = async () => {
+//   const response = await fetch('https://dog.ceo/api/breeds/image/random')
+//   const object = await response.json();
+//   return object.message
+// }
+function fetchDog() {
+  return fetch("https://dog.ceo/api/breeds/image/random").then(response =>
+    response
+      .json()
+      .then(json =>
+        response.ok ? Promise.resolve(json) : Promise.reject(json)
+      )
+  );
+}
+
+console.log(fetchDog());
+
 module.exports = { randomNumber, toUpperCase, firstLetter, concatString };
