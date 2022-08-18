@@ -1,0 +1,1 @@
+SELECT 15 AS `Número`, IF (15 MOD 2 = 0, 'É par', 'É ímpar');
