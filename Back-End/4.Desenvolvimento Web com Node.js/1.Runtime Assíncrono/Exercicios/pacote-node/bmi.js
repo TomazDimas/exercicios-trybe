@@ -1,5 +1,7 @@
-const altura = 1.76;
-const peso = 75;
+const readline = require('readline-sync');
+
+const altura = readline.questionInt('Whats your height?');
+const peso = readline.questionInt('What your weight?');
 
 const calculateBMI = (alt, peso) => {
   console.log(`Altura: ${altura} e Peso: ${peso}`);
