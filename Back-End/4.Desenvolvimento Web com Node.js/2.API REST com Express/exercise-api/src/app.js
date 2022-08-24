@@ -31,4 +31,11 @@ app.get('/myActivities', (req, res) => {
   res.status(200).json({activities});
 })
 
+app.get('/filter/myActivities', (req, res) => {
+  const { status } = req.query;
+  const filteredActivitie = activities.filter((atv) => atv.status === status);
+
+  res.status(200).json(filteredActivitie);
+})
+
 module.exports = app;
