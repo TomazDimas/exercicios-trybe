@@ -111,4 +111,15 @@ describe('Testando a API Cacao Trybe', function () {
       ]);
     });
   });
+
+  describe('Usando GET em /chocolates/total para buscar a quantidade', function() {
+    it('Retorna a quantidade de tipos de chocolate', async function() {
+      const response = await chai
+        .request(app)
+        .get('/chocolates/total');
+
+      expect(response.status).to.be.equal(200);
+      expect(response.body).to.deep.equal({ "totalChocolates": 4 })
+    })
+  })
 });
