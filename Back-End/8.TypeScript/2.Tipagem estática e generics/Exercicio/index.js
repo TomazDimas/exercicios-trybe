@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var Car_1 = require("./Car");
+var gol = new Car_1["default"]('Volkswagen', 'Prata', 4);
+gol.turnOn();
+gol.speedUp();
+gol.turn('esquerda');
+gol.speedUp();
+gol.speedDown();
+gol.turn('direita');
+gol.speedUp();
+gol.speedDown();
+gol.stop;
+gol.turnOff();
