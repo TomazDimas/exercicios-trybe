@@ -1,0 +1,9 @@
+[0;1;31m●[0m mysql.service
+     Loaded: [0;1;31mnot-found[0m (Reason: Unit mysql.service not found.)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Fri 2022-10-07 23:02:17 -03; 14min ago
+
+out 07 23:02:17 tomazLinux-Z590-AORUS-ELITE-AX systemd[1]: mysql.service: Scheduled restart job, restart counter is at 5.
+out 07 23:02:17 tomazLinux-Z590-AORUS-ELITE-AX systemd[1]: Stopped MySQL Community Server.
+out 07 23:02:17 tomazLinux-Z590-AORUS-ELITE-AX systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmysql.service: Start request repeated too quickly.[0m
+out 07 23:02:17 tomazLinux-Z590-AORUS-ELITE-AX systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmysql.service: Failed with result 'exit-code'.[0m
+out 07 23:02:17 tomazLinux-Z590-AORUS-ELITE-AX systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MySQL Community Server.[0m
