@@ -38,8 +38,21 @@ class Student {
     if(value.length > 2) throw new Error('Podem existir apenas 2 notas de trabalho!')
     this._notasProvas = value
   }
+
+  getGradesSum(): number {
+    const sum = this.notasProvas.reduce((acc, curr) => acc + curr, 0) + this.notasTrabalhos.reduce((acc, curr) => acc + curr, 0);
+    return sum;
+  }
+
+  getGradesMed(): number {
+    const sum = this.notasProvas.reduce((acc, curr) => acc + curr, 0) + this.notasTrabalhos.reduce((acc, curr) => acc + curr, 0);
+    const length = this.notasProvas.length + this.notasTrabalhos.length;
+    return sum / length;
+  }
 }
 
 const tomaz = new Student('123', 'Tomaz', [9, 8, 7, 8], [7, 8]);
-tomaz.notasProvas = [1, 2, 3, 4]
+console.log(tomaz.getGradesSum());
+console.log(tomaz.getGradesMed());
+
 console.log(tomaz);
