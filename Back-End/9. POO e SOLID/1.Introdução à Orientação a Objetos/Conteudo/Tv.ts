@@ -53,3 +53,9 @@ const samsung = new Tv(
 );
 
 samsung.turnOn();
+
+samsung.connectedTo = 'XABLAU';
+samsung.turnOn();
+
+samsung.connectedTo = 'ETHERNET';
+samsung.turnOn();
