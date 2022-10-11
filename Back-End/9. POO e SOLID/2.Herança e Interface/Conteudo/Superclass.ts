@@ -1,23 +1,23 @@
 class Superclass {
   constructor(public isSuper: boolean = true) {}
 
-  protected sayHello() {
+  public sayHello() {
     console.log('Olá mundo!');
   }
 }
 
 class Subclass extends Superclass {
-  public sayHello2() {
-    console.log(this.sayHello());
+  constructor() {
+    super(false);
   }
 }
 
-const myFunc = (superClass: Subclass) => {
-  superClass.sayHello2();
+const myFunc = (superClass: Superclass) => {
+  console.log(superClass.isSuper ? 'Super!' : 'Sub!');
 }
 
-// const spCls = new Superclass();
+const spCls = new Superclass();
 const sbClas = new Subclass();
 
-// myFunc(spCls);
+myFunc(spCls);
 myFunc(sbClas);
