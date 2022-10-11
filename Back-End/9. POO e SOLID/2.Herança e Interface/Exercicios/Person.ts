@@ -1,4 +1,4 @@
-class Person {
+export default class Person {
   constructor(private _name: string, private _birthDate: Date) {}
   
   get name(): string { return this._name; }
@@ -34,12 +34,14 @@ class Person {
   }
 }
 
-const tomaz = new Person('Tomaz', new Date('2001-07-27'))
-tomaz.birthDate = new Date('1890-07-27')
-console.log(tomaz.age);
-console.log(tomaz.birthDate);
+// const tomaz = new Person('Tomaz', new Date('2001-07-27'))
+// tomaz.birthDate = new Date('1890-07-27')
+// console.log(tomaz.age);
+// console.log(tomaz.birthDate);
 
 
-console.log(tomaz);
+// console.log(tomaz);
+const carolina = new Person('Carolina da Silva', new Date('2005/03/17'));
+console.log(carolina.age);
 
 
