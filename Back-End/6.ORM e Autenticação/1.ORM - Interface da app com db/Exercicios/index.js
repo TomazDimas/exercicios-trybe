@@ -8,4 +8,6 @@ app.use(express.json());
 
 app.get('/books', BookController.getAll);
 
+app.get('/books/:id', BookController.getById);
+
 app.listen(PORT, () => console.log(`RODANDO APP EM: ${PORT}`));
