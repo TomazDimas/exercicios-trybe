@@ -10,4 +10,6 @@ app.get('/books', BookController.getAll);
 
 app.get('/books/:id', BookController.getById);
 
+app.post('/books', BookController.create);
+
 app.listen(PORT, () => console.log(`RODANDO APP EM: ${PORT}`));

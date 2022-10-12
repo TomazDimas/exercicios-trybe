@@ -7,7 +7,7 @@ module.exports = {
       id: {
         allowNull: false,
         primaryKey: true,
-        autoIncremenet: true,
+        autoIncrement: true,
         type: Sequelize.INTEGER,
       },
       title: {
@@ -34,6 +34,6 @@ module.exports = {
   },
 
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("books");
+    await queryInterface.dropTable("Books");
   },
 };
