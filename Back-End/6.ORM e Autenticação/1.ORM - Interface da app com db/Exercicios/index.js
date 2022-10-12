@@ -12,6 +12,6 @@ app.get("/books/:id", BookController.getById);
 
 app.post("/books", BookController.create);
 
-app.put("/books", BookController.update);
+app.put("/books/:id", BookController.update);
 
 app.listen(PORT, () => console.log(`RODANDO APP EM: ${PORT}`));
