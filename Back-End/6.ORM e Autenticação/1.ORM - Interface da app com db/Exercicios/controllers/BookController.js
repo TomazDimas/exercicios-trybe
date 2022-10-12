@@ -13,6 +13,15 @@ const getById = async (req, res) => {
   res.status(200).json(books);
 };
 
+const create = async (req, res) => {
+  const { title, author, pageQuantity } = req.body;
+  if (!title || !author || !pageQuantity)
+    return res.status(404).json({ message: "Campo faltando" });
+  const newBook = BookService.create({ title, author, pageQuantity })
+
+  res.statu(200).json(newBook);
+};
+
 module.exports = {
   getAll,
   getById,
