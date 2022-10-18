@@ -1,9 +1,10 @@
 import FooCepAPI from './FooCepAPI';
+import ICepApi from './ICepApi';
 
 class CepService {
-  private readonly cepApi: FooCepAPI;
+  private readonly cepApi: ICepApi;
 
-  constructor(cepApi: FooCepAPI = new FooCepAPI()) {
+  constructor(cepApi: ICepApi = new FooCepAPI()) {
     this.cepApi = cepApi;
   }
 
@@ -17,3 +18,4 @@ class CepService {
 }
 
 export default CepService;
+
