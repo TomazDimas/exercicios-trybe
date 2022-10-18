@@ -1,8 +1,9 @@
-export interface IVehicle {
+export interface DriveVehicle {
   drive(): void;
+}
+
+export interface FlyingVehicle {
   fly(): void;
 }
 
-// export interface FlyingCar extends IVehicle {
-//   fly(): void;
-// }
+export interface FlyAndDriveVehicle extends DriveVehicle, FlyingVehicle {};
