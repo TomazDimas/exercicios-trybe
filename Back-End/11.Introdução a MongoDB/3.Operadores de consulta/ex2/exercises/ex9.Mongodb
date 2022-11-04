@@ -1,0 +1,5 @@
+use('heroes');
+
+db.super.find({
+  'aspects.hairColor': { $in: ['Black', 'No Hair'] }
+});
