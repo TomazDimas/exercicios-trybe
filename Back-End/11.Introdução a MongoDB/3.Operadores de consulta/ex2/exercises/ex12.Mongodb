@@ -1,0 +1,5 @@
+use('heroes');
+
+db.super.find(
+  { 'aspects.height': { $not: { $gt: 180 } } }
+).count();

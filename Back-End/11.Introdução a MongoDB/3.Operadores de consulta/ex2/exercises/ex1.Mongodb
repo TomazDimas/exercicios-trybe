@@ -1,0 +1,3 @@
+use('heroes');
+
+db.super.find();
