@@ -1,0 +1,4 @@
+db.exercise.updateMany(
+  {},
+  { $unset: { budget: '', estimatedBudget: '' } }
+)

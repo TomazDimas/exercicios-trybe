@@ -1,0 +1,4 @@
+db.exercise.updateOne(
+  { title: 'Home Alone' },
+  { $inc: { budget: 5 } }
+)
