@@ -1,0 +1,4 @@
+db.exercise.updateMany(
+  {},
+  { $set: { sequels: 0 } }
+)
