@@ -1,10 +1,15 @@
-# escrita
-file = open("arquivo.dat", mode="wb")
-file.write(b"C\xc3\xa1ssio 30")  # o prefixo b em uma string indica que seu valor está codificado em bytes
-file.close()
+import csv
 
-# leitura
-file = open("arquivo.dat", mode="rb")
-content = file.read()
-print(content)  # saída: b'C\xc3\xa1ssio 30'
-file.close()  # não podemos esquecer de fechar o arquivo
+with open("graduacao_unb.csv", encoding = "utf-8") as file:
+    graduacao_reader = csv.DictReader(file, delimiter=",", quotechar='"')
+
+    # a linha de cabeçalhos é utilizada como chave do dicionário
+    # agrupa cursos por departamento
+    group_by_department = {}
+    for row in graduacao_reader:
+        department = row["unidade_responsavel"]
+        if department not in group_by_department:
+            group_by_department[department] = 0
+        group_by_department[department] += 1
+
+print(group_by_department)
