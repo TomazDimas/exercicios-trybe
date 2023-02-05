@@ -25,8 +25,12 @@ while next_page_url:
     # Imprime os produtos de uma determinada página
     print()
     for product in selector.css(".product_pod"):
+        suffix = "..."
         title = product.css("h3 a::text").get()
-        price = product.css(".product_price .price_color::text").get()
+        if title.endswith(suffix):
+            title = title[:-len(suffix)]
+        print(title)
+        price = product.css(".product_price .price_color::text").re(r"£\d+\.\d{2}")
         print(title, price)
     # Descobre qual é a próxima página
     next_page_url = selector.css(".next a::attr(href)").get()
